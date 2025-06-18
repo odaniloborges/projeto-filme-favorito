@@ -14,13 +14,99 @@
             </h1>
             <ul class="header__links">
                 <li class="header__links__item">
-                    <a href="#" class="button button--secondary">Assine agora</a>
+                    <a href="#" class="button button--secondary">Inicio</a>
                 </li>
                 <li class="header__links__item">
-                    <a href="#" class="button button--dark">Entrar</a>
+                    <a href="#" class="button button--secondary">Temporadas</a>
                 </li>
             </ul>
+            <div class="snowfall" aria-hidden="true">  
+            </div>
         </div>
     </header>
+    <section class="season">
+        <h2 class="title--big">Galeria de Imagens</h2>
+        <nav class="season__tabs">
+            <button data-tab-button="season_1" class="season__tabs__button season__tabs__button--is--active">
+                1° Temporada
+            </button>
+            <button data-tab-button="season_2" class="season__tabs__button">
+                2° Temporada
+            </button>
+            <button data-tab-button="season_3" class="season__tabs__button">
+                3° Temporada
+            </button>
+            <button data-tab-button="season_4" class="season__tabs__button">
+                4° Temporada
+            </button>
+        </nav>
+        <ul data-tab-id="season_1" class="season__list season__list--is--active">
+            <li class="season__list__item">
+                <img src="./dist/images/temp_1/td_1.jpg" alt="">
+            </li>
+            <li class="season__list__item">
+                <img src="./dist/images/temp_1/td_11.webp" alt="">
+            </li>
+            <li class="season__list__item">
+                <img src="./dist/images/temp_1/td_12.webp" alt="">
+            </li>
+        </ul>
+        <ul data-tab-id="season_2" class="season__list">
+            <li class="season__list__item">
+                <img src="./dist/images/temp_2/td_2.png" alt="">
+            </li>
+            <li class="season__list__item">
+                <img src="./dist/images/temp_2/td_21.webp" alt="">
+            </li>
+            <li class="season__list__item">
+                <img src="./dist/images/td_fundo.jpg" alt="">
+            </li>
+        </ul>
+        <ul data-tab-id="season_3" class="season__list">
+            <li class="season__list__item">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="spidey">
+            </li>
+            <li class="season__list__item">
+                <img src="./dist/images/em_breve/spidey.jpg" alt="">
+            </li>
+            <li class="season__list__item">
+                <img src="./dist/images/em_breve/spidey.jpg" alt="">
+            </li>
+        </ul>
+        <ul data-tab-id="season_4" class="season__list">
+            <li class="season__list__item">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="spidey">
+            </li>
+            <li class="season__list__item">
+                <img src="./dist/images/em_breve/spidey.jpg" alt="">
+            </li>
+            <li class="season__list__item">
+                <img src="./dist/images/em_breve/spidey.jpg" alt="">
+            </li>
+        </ul>
+    </section>
+    <section class="trailer">
+        <h2 class="title--big">Trailers</h2>
+        <nav class="trailer__tabs">
+            <button data-tab-button="trailer_1" class="trailer__tabs__button trailer__tabs__button--is--active">
+                1° Temporada
+            </button>
+            <button data-tab-button="trailer_2" class="trailer__tabs__button">
+                2° Temporada
+            </button>
+            <button data-tab-button="trailer_3" class="trailer__tabs__button">
+                3° Temporada
+            </button>
+            <button data-tab-button="trailer_4" class="trailer__tabs__button">
+                4° Temporada
+            </button>
+        </nav>
+        <ul class="trailer__list">
+            <li data-tab-id="trailer_1" class="trailer__list__item--is--active">
+                <iframe  width="425" height="344" src="https://www.youtube.com/watch?v=8Wm9bLXRIw0&ab_channel=HBOBrasil" frameborder="0" allowfullscreen></iframe>
+            </li>
+        </ul>
+    </section>
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>

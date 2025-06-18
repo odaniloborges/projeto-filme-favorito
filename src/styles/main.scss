@@ -1,10 +1,13 @@
 @use 'vars';
 @use 'header';
+@use 'season';
+@use 'trailer';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
     list-style: none;
 }
 
@@ -81,14 +84,14 @@ Body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 60px;
-    font-size: 18px;
+    height: 30px;
+    font-size: 12px;
     color: vars.$corTextoSecundario;
-    background-color: vars.$corDeFundoBotaoPrimario;
+    background-color: transparent;
     text-transform: uppercase;
     border-radius: 4px;
     text-decoration: none;
-    padding: 8px 14px;
+    padding: 4px 8px;
     letter-spacing: 1px;
     border: 1px solid vars.$corDeFundoBotaoPrimario;
 
@@ -97,8 +100,8 @@ Body {
     }
 
     &--secondary {
-        background-color: vars.$corDeFundoBotaoSecundario;
-        border-color: vars.$corDeFundoBotaoSecundario;
+        background-color: transparent;
+        border-color: vars.$corTextoSecundario;
 
         &:hover {
             background-color: lighten(vars.$corDeFundoBotaoSecundario, 3%);
