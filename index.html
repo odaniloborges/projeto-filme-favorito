@@ -7,7 +7,7 @@
     <title>true detective</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="header__container">
             <h1>
                 <img class="header__logo" src="./dist/images/logo.png" alt="Logo">
@@ -19,12 +19,15 @@
                 <li class="header__links__item">
                     <a href="#" class="button button--secondary">Temporadas</a>
                 </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--secondary">Trailer</a>
+                </li>
             </ul>
             <div class="snowfall" aria-hidden="true">  
             </div>
         </div>
     </header>
-    <section class="season">
+    <section class="season" id="season">
         <h2 class="title--big">Galeria de Imagens</h2>
         <nav class="season__tabs">
             <button data-tab-button="season_1" class="season__tabs__button season__tabs__button--is--active">
@@ -85,28 +88,31 @@
             </li>
         </ul>
     </section>
-    <section class="trailer">
+    <section class="trailer" id="trailer">
         <h2 class="title--big">Trailers</h2>
-        <nav class="trailer__tabs">
-            <button data-tab-button="trailer_1" class="trailer__tabs__button trailer__tabs__button--is--active">
-                1° Temporada
-            </button>
-            <button data-tab-button="trailer_2" class="trailer__tabs__button">
-                2° Temporada
-            </button>
-            <button data-tab-button="trailer_3" class="trailer__tabs__button">
-                3° Temporada
-            </button>
-            <button data-tab-button="trailer_4" class="trailer__tabs__button">
-                4° Temporada
-            </button>
-        </nav>
         <ul class="trailer__list">
-            <li data-tab-id="trailer_1" class="trailer__list__item--is--active">
-                <iframe  width="425" height="344" src="https://www.youtube.com/watch?v=8Wm9bLXRIw0&ab_channel=HBOBrasil" frameborder="0" allowfullscreen></iframe>
+            <li class="trailer__list__item">
+                <iframe width="600" height="338" src="https://www.youtube.com/embed/8Wm9bLXRIw0?si=J2M0lxjyeH5Q0O5f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </li>
+            <li class="trailer__list__item">
+                <iframe width="600" height="338" src="https://www.youtube.com/embed/kxVnQgJonyw?si=REfhd-04CPmyNzqn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </li>
+            <li class="trailer__list__item">
+                <iframe width="600" height="338" src="https://www.youtube.com/embed/sQ19x4AU9mc?si=63yda1rzeYK7uwZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </li>
+            <li class="trailer__list__item">
+                <iframe width="600" height="338" src="https://www.youtube.com/embed/GyffXSrYzaY?si=xzZe7Y9k_CdItqyH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </li>
         </ul>
     </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img src="./dist/images/logo.png" alt="logo" class="footer__logo">
+            <p class="text--small">
+                ® 2025 HBO Max, Warner Bros Company. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
     <script src="./src/scripts/main.js"></script>
 </body>
 </html>

@@ -1,19 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('[data-tab-button]');
 
-    const heroSection = document.querySelector('.header');
-    const alturaHero = heroSection.clientHeight;
-
-    window.addEventListener('scroll', function() {
-        const posicaoAtual = window.scrollY;
-
-        if (posicaoAtual < alturaHero) {
-            ocultarElementosHeader(); 
-        } else {
-            exibeElementosHeader();
-        }
-    })
-
     //Seção de atração, programação das abas
     for (let i = 0; i < buttons.length; i++) {
         buttons[i],this.addEventListener('click', function(botao) {
@@ -28,16 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 })
-
-function ocultarElementosHeader() {
-    const header = document.querySelector('header')
-    header.classList.add('header--is-hidden');
-}
-
-function exibeElementosHeader() {
-    const header = document.querySelector('header')
-    header.classList.remove('header--is-hidden');
-}
 
 function removeBotaoAtivo() {
     const buttons = document.querySelectorAll('[data-tab-button]');
